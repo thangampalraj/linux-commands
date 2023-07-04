@@ -38,3 +38,5 @@ jobs:
           ls -a
           whoami
           env
+          hostname
+          pwd
