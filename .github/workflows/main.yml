@@ -36,3 +36,5 @@ jobs:
           java -version
           ant -version
           ls -a
+          whoami
+          env
