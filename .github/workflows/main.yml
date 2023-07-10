@@ -8,15 +8,16 @@ name: linux commands
       - main
   workflow_dispatch: null
 jobs:
-  script-execution:
+  DEV-Deployment:
     runs-on: self-hosted
     environment: Dev
     steps:
     - uses: actions/checkout@v3
     - name: Run a one-line script
       run: sh ./script.sh
-  multi-commands:
+  Prod-Deployment:
     runs-on: ubuntu-latest
+    environment: Prod
     steps:
       - uses: actions/checkout@v3
       - name: Run a multi-line script
