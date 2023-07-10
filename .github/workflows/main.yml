@@ -35,8 +35,7 @@ jobs:
       - name: Run a multi-line script
         run: |
           echo what is installed in it?
-          java -version
-          ant -version
+          python -V
           ls -a
           whoami
           env
