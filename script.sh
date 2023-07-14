@@ -10,3 +10,10 @@ df -h
 
 echo "***********current user***********"
 whoami
+
+echo ******secret1************
+$1
+
+echo ********secret2**********
+$2
+
