@@ -12,7 +12,7 @@ name: linux commands
       changenumber:
         description: 'pass change request number'
         default: ''
-        required: false
+        required: true
         type: string
   workflow_dispatch: null
 jobs:
