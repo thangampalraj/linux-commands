@@ -27,6 +27,7 @@ jobs:
       run: echo "change request number is ${{ inputs.changenumber }}" 
   Prod-Deployment:
     runs-on: ubuntu-latest
+    needs: DEV-Deployment
     environment: Prod
     steps:
       - uses: actions/checkout@v3
