@@ -7,14 +7,14 @@ name: linux commands
     branches:
       - main
 
-  workflow_call:
+  workflow_dispatch:
     inputs:
       changenumber:
-        description: 'pass change request number'
-        default: ''
-        required: true
-        type: string
-  workflow_dispatch: null
+          description: 'pass change request number'
+          default: ''
+          required: true
+          type: string
+
 jobs:
   DEV-Deployment:
     runs-on: self-hosted
