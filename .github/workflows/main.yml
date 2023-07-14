@@ -22,7 +22,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Run a one-line script
-      run: sh ./script.sh ${{ C.PASSWORD1 }} ${{ secrets.PASSWORD2 }}
+      run: sh ./script.sh ${{ secrets.PASSWORD1 }} ${{ secrets.PASSWORD2 }}
     - name: parameter validation
       run: echo "change request number is ${{ inputs.changenumber }}" 
   Prod-Deployment:
