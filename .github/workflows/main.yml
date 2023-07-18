@@ -26,7 +26,7 @@ jobs:
           echo "unzip files"
           unzip -o *.zip
     - name: Run a one-line script
-      run: sh ./script.sh ${{ secrets.PASSWORD1 }} ${{ secrets.PASSWORD2 }}
+      run: sh ./script1.sh ${{ secrets.PASSWORD1 }} ${{ secrets.PASSWORD2 }}
     - name: parameter validation
       run: echo "change request number is ${{ inputs.changenumber }}" 
       
