@@ -20,8 +20,10 @@ echo ********secret2**********
 echo $password2
 
 echo ******change directory*********
-cd /actions-runner/_work/linux-commands/linux-commands && ll
-
+pwd
+cd /actions-runner/_work/linux-commands/linux-commands
+pwd
+ls
 echo *****copy files
-rsync -xvzf /actions-runner/_work/linux-commands/linux-commands /tmp/thangam
+rsync -xvzf /actions-runner/_work/linux-commands/linux-commands/* /tmp/thangam
 
