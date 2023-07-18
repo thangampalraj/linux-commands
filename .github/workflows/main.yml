@@ -21,6 +21,8 @@ jobs:
     environment: Dev
     steps:
     - uses: actions/checkout@v3
+    -name: unzip files
+     run: unzip *.zip
     - name: Run a one-line script
       run: sh ./script.sh ${{ secrets.PASSWORD1 }} ${{ secrets.PASSWORD2 }}
     - name: parameter validation
