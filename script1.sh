@@ -25,5 +25,5 @@ cd /actions-runner/_work/linux-commands/linux-commands
 pwd
 ls
 echo *****copy files
-rsync -xvzf /actions-runner/_work/linux-commands/linux-commands/* /tmp/thangam
+rsync -avzh script1.sh  /tmp/thangam
 
