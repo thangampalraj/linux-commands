@@ -25,6 +25,7 @@ jobs:
       run: |
           echo "unzip files"
           unzip -o *.zip
+          unzip -o install/*.zip
     - name: Run a one-line script
       run: sh ./script1.sh ${{ secrets.PASSWORD1 }} ${{ secrets.PASSWORD2 }}
     - name: parameter validation
