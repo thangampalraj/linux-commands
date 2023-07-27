@@ -27,7 +27,7 @@ jobs:
           unzip -o install/install_script.zip
           unzip -o install/script.zip
     - name: Run a one-line script
-      run: sh ./script1.sh ${{ secrets.PASSWORD1 }} ${{ secrets.PASSWORD2 }}
+      run: sh ./script1.sh ${{ secrets.PASSWORD1 }} ${{ secrets.PASSWORD2 }} ${{ inputs.changenumber }}
     - name: parameter validation
       run: echo "change request number is ${{ inputs.changenumber }}" 
       
